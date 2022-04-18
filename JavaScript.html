@@ -1,0 +1,21 @@
+<script>
+
+    function handleFormSubmit(formObject){
+      google.script.run.processForm(formObject);
+    
+      // multi chossen answer in checkbox
+      document.getElementById("Question01Answer01").value = '';
+      document.getElementById("Question01Answer02").value = '';
+    
+      // one answer only in radio
+      document.getElementById("Question02").value = '';
+    
+      //student information
+      document.getElementById("Name").value = '';
+      document.getElementById("PhoneNumber").value = '';
+      document.getElementById("Email").value = '';
+    
+    }
+    
+    
+    </script>
